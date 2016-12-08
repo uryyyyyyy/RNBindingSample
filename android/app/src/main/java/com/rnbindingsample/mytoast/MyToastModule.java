@@ -9,12 +9,9 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.UiThreadUtil;
 import com.facebook.react.common.MapBuilder;
-import com.facebook.react.module.annotations.ReactModule;
 
 import java.util.Map;
 
-
-@ReactModule(name = "MyToastAndroid")
 public class MyToastModule extends ReactContextBaseJavaModule {
 
     public MyToastModule(ReactApplicationContext reactContext) {
