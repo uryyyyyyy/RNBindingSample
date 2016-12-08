@@ -17,7 +17,7 @@ import NyToastAndroid from './MyToastAndroid';
 export default class RNBindingSample extends Component {
 
   componentDidMount(){
-    NyToastAndroid.show('Awsome', NyToastAndroid.SHORT)
+    NyToastAndroid.showWithCallback('Awsome', NyToastAndroid.SHORT, (str) => console.log(str))
   }
 
 

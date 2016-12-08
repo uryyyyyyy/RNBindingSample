@@ -46,4 +46,15 @@ public class MyToastModule extends ReactContextBaseJavaModule {
             }
         });
     }
+
+    @ReactMethod
+    public void showWithCallback(final String message, final int duration, final Callback callback) {
+        UiThreadUtil.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getReactApplicationContext(), message, duration).show();
+                callback.invoke("callback");
+            }
+        });
+    }
 }
