@@ -12,7 +12,15 @@ import {
   View
 } from 'react-native';
 
+import NyToastAndroid from './MyToastAndroid';
+
 export default class RNBindingSample extends Component {
+
+  componentDidMount(){
+    NyToastAndroid.show('Awsome', NyToastAndroid.SHORT)
+  }
+
+
   render() {
     return (
       <View style={styles.container}>
