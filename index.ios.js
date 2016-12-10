@@ -12,7 +12,20 @@ import {
   View
 } from 'react-native';
 
+import MyAlert from'./MyAlert';
+
 export default class RNBindingSample extends Component {
+
+  componentDidMount(){
+      MyAlert.alertWithArgs({
+          title: "my hello",
+          type: 'plain-text',
+          defaultValue: "defaultValue"
+      }, (id, value) => {
+          console.log(value);
+      });
+  }
+
   render() {
     return (
       <View style={styles.container}>
