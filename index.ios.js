@@ -14,7 +14,7 @@ import {
 
 import MyAlert from'./MyAlert';
 import MyLog from'./MyLog';
-import MyLogSwift from'./MyLogSwift';
+import MyLogSwift, {PATTERN1} from'./MyLogSwift';
 
 export default class RNBindingSample extends Component {
 
@@ -27,8 +27,21 @@ export default class RNBindingSample extends Component {
       //     console.log(value);
       // });
 
+      // MyLog.callFunc(
+      //     'action',
+      //     'string_param1',
+      //     { foo: 'bar'},
+      //     (error, ret) => {
+      //         if (error) {
+      //             console.error(error);
+      //         } else {
+      //             console.log(ret);
+      //         }
+      //     }
+      // );
+
       MyLogSwift.callFunc(
-          'string_param1',
+          PATTERN1,
           { foo: 'bar'},
           (error, ret) => {
               if (error) {

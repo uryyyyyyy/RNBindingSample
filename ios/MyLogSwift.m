@@ -11,6 +11,6 @@
 
 @interface RCT_EXTERN_MODULE(MyLogSwift, NSObject)
 
-RCT_EXTERN_METHOD(callFunc:(NSString *)param dict:(NSDictionary*)dict findEvents:(RCTResponseSenderBlock)callback)
+RCT_EXTERN_METHOD(callFunc:(NSInteger *)typeParam dict:(NSDictionary*)dict findEvents:(RCTResponseSenderBlock)callback)
 
 @end
