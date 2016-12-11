@@ -26,6 +26,8 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		E70AFEF01DFC49FC006360F9 /* RCTMyAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AFEEF1DFC49FC006360F9 /* RCTMyAlert.m */; };
 		E70AFEF41DFCED64006360F9 /* MyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AFEF31DFCED63006360F9 /* MyLog.m */; };
+		E70AFEF91DFCF0BC006360F9 /* MyLogSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AFEF81DFCF0BC006360F9 /* MyLogSwift.swift */; };
+		E70AFEFB1DFCF106006360F9 /* MyLogSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AFEFA1DFCF106006360F9 /* MyLogSwift.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +200,9 @@
 		E70AFEEF1DFC49FC006360F9 /* RCTMyAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMyAlert.m; sourceTree = "<group>"; };
 		E70AFEF21DFCED56006360F9 /* MyLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLog.h; sourceTree = "<group>"; };
 		E70AFEF31DFCED63006360F9 /* MyLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLog.m; sourceTree = "<group>"; };
+		E70AFEF71DFCF0BC006360F9 /* RNBindingSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNBindingSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		E70AFEF81DFCF0BC006360F9 /* MyLogSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLogSwift.swift; sourceTree = "<group>"; };
+		E70AFEFA1DFCF106006360F9 /* MyLogSwift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogSwift.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,6 +425,9 @@
 		E70AFEF51DFCF051006360F9 /* log_swift */ = {
 			isa = PBXGroup;
 			children = (
+				E70AFEF81DFCF0BC006360F9 /* MyLogSwift.swift */,
+				E70AFEF71DFCF0BC006360F9 /* RNBindingSample-Bridging-Header.h */,
+				E70AFEFA1DFCF106006360F9 /* MyLogSwift.m */,
 			);
 			name = log_swift;
 			sourceTree = "<group>";
@@ -475,6 +483,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -728,7 +739,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70AFEFB1DFCF106006360F9 /* MyLogSwift.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				E70AFEF91DFCF0BC006360F9 /* MyLogSwift.swift in Sources */,
 				E70AFEF01DFC49FC006360F9 /* RCTMyAlert.m in Sources */,
 				E70AFEF41DFCED64006360F9 /* MyLog.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
@@ -761,6 +774,7 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -778,6 +792,7 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = RNBindingSampleTests/Info.plist;
@@ -793,6 +808,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = RNBindingSample/Info.plist;
@@ -804,6 +820,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNBindingSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNBindingSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -812,6 +831,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RNBindingSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -822,6 +842,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNBindingSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNBindingSample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
