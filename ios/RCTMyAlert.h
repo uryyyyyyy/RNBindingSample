@@ -12,8 +12,8 @@
 #import <RCTInvalidating.h>
 
 typedef NS_ENUM(NSInteger, RCTMyAlertViewStyle) {
-  RCTMyAlertViewStyleDefault = 0,
-  RCTMyAlertViewStylePlainTextInput
+    RCTMyAlertViewStyleDefault = 0,
+    RCTMyAlertViewStylePlainTextInput
 };
 
 
