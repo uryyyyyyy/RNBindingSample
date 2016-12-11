@@ -1,10 +1,3 @@
-//
-//  RCTMyAlert.m
-//  RNBindingSample
-//
-//  Created by 柴田幸輝 on 2016/12/10.
-//  Copyright © 2016年 Facebook. All rights reserved.
-//
 
 #import "RCTMyAlert.h"
 
