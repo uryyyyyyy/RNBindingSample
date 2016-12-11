@@ -321,6 +321,7 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				E70AFEF71DFCF0BC006360F9 /* RNBindingSample-Bridging-Header.h */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -426,7 +427,6 @@
 			isa = PBXGroup;
 			children = (
 				E70AFEF81DFCF0BC006360F9 /* MyLogSwift.swift */,
-				E70AFEF71DFCF0BC006360F9 /* RNBindingSample-Bridging-Header.h */,
 				E70AFEFA1DFCF106006360F9 /* MyLogSwift.m */,
 			);
 			name = log_swift;

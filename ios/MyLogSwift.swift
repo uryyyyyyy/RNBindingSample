@@ -15,9 +15,12 @@ class MyLogSwift: NSObject {
   @objc(callFunc:dict:findEvents:)
   func callFunc(param: NSString, dict: NSDictionary, callback: RCTResponseSenderBlock) {
     let str = "hello"
-    NSLog(str)
-    NSLog("param: " + (param as String));
-    //NSLog("dict: " + dict);
+    print(str)
+    print("param: " + (param as String));
+
+    let _dict: Dictionary = dict as Dictionary
+    print("dict: ");
+    print(_dict)
 
     let obj: Dictionary<String, String> = ["foo": "bar", "hey": "ho"]
 
