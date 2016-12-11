@@ -111,6 +111,8 @@ RCT_EXPORT_METHOD(alertWithArgs:(NSDictionary *)args
                                                       handler:^(__unused UIAlertAction *action) {
                                                         switch (type) {
                                                           case RCTMyAlertViewStylePlainTextInput:
+                                                            callback(@[buttonKey, [alertController.textFields.firstObject text]]);
+                                                            break;
                                                           case RCTMyAlertViewStyleDefault:
                                                             callback(@[buttonKey]);
                                                             break;
