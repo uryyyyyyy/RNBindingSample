@@ -13,17 +13,30 @@ import {
 } from 'react-native';
 
 import MyAlert from'./MyAlert';
+import MyLog from'./MyLog';
 
 export default class RNBindingSample extends Component {
 
   componentDidMount(){
-      MyAlert.alertWithArgs({
-          title: "my hello",
-          type: 'plain-text',
-          defaultValue: "defaultValue"
-      }, (id, value) => {
-          console.log(value);
-      });
+      // MyAlert.alertWithArgs({
+      //     title: "my hello",
+      //     type: 'plain-text',
+      //     defaultValue: "defaultValue"
+      // }, (id, value) => {
+      //     console.log(value);
+      // });
+
+      MyLog.callFunc(
+          'string_param1',
+          { foo: 'bar'},
+          (error, ret) => {
+              if (error) {
+                  console.error(error);
+              } else {
+                  console.log(ret);
+              }
+          }
+      );
   }
 
   render() {

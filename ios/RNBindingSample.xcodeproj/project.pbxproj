@@ -25,6 +25,7 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		E70AFEF01DFC49FC006360F9 /* RCTMyAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AFEEF1DFC49FC006360F9 /* RCTMyAlert.m */; };
+		E70AFEF41DFCED64006360F9 /* MyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AFEF31DFCED63006360F9 /* MyLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +196,8 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		E70AFEEE1DFC49EE006360F9 /* RCTMyAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTMyAlert.h; sourceTree = "<group>"; };
 		E70AFEEF1DFC49FC006360F9 /* RCTMyAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMyAlert.m; sourceTree = "<group>"; };
+		E70AFEF21DFCED56006360F9 /* MyLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLog.h; sourceTree = "<group>"; };
+		E70AFEF31DFCED63006360F9 /* MyLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +310,8 @@
 		13B07FAE1A68108700A75B9A /* RNBindingSample */ = {
 			isa = PBXGroup;
 			children = (
+				E70AFEF51DFCF051006360F9 /* log_swift */,
+				E70AFEF11DFCED40006360F9 /* log */,
 				E70AFEED1DFC49D7006360F9 /* alert */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -401,6 +406,22 @@
 				E70AFEEF1DFC49FC006360F9 /* RCTMyAlert.m */,
 			);
 			name = alert;
+			sourceTree = "<group>";
+		};
+		E70AFEF11DFCED40006360F9 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				E70AFEF21DFCED56006360F9 /* MyLog.h */,
+				E70AFEF31DFCED63006360F9 /* MyLog.m */,
+			);
+			name = log;
+			sourceTree = "<group>";
+		};
+		E70AFEF51DFCF051006360F9 /* log_swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = log_swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -709,6 +730,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				E70AFEF01DFC49FC006360F9 /* RCTMyAlert.m in Sources */,
+				E70AFEF41DFCED64006360F9 /* MyLog.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
