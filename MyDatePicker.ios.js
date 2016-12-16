@@ -32,7 +32,7 @@ DatePickerIOS.propTypes = {
   mode: PropTypes.oneOf(['date', 'time', 'datetime'])
 };
 
-const RCTDatePickerIOS = requireNativeComponent('RCTDatePicker', {
+const RCTDatePickerIOS = requireNativeComponent('MyDatePicker', {
   propTypes: {
     date: PropTypes.number,
     mode: PropTypes.oneOf(['date', 'time', 'datetime']),
