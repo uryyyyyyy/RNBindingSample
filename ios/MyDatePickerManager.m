@@ -1,7 +1,7 @@
-#import "RCTDatePickerManager.h"
+#import "MyDatePickerManager.h"
 
 #import "RCTBridge.h"
-#import "RCTDatePicker.h"
+#import "MyDatePicker.h"
 
 @implementation RCTConvert(UIDatePicker)
 
@@ -20,7 +20,7 @@ RCT_EXPORT_MODULE(MyDatePicker)
 
 - (UIView *)view
 {
-  return [[RCTDatePicker alloc] init];
+  return [[MyDatePicker alloc] init];
 }
 
 RCT_EXPORT_VIEW_PROPERTY(date, NSDate)

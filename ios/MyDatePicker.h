@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "UIView+React.h"
 
-@interface RCTDatePicker : UIDatePicker
+@interface MyDatePicker : UIDatePicker
 
 @property (nonatomic, copy) RCTBubblingEventBlock onMyChange;
 

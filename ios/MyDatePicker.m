@@ -1,6 +1,6 @@
-#import "RCTDatePicker.h"
+#import "MyDatePicker.h"
 
-@implementation RCTDatePicker
+@implementation MyDatePicker
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
