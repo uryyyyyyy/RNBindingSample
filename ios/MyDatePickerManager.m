@@ -9,7 +9,6 @@ RCT_ENUM_CONVERTER(UIDatePickerMode, (@{
                                         @"time": @(UIDatePickerModeTime),
                                         @"date": @(UIDatePickerModeDate),
                                         @"datetime": @(UIDatePickerModeDateAndTime),
-                                        @"countdown": @(UIDatePickerModeCountDownTimer), // not supported yet
                                         }), UIDatePickerModeTime, integerValue)
 
 @end
@@ -18,8 +17,7 @@ RCT_ENUM_CONVERTER(UIDatePickerMode, (@{
 
 RCT_EXPORT_MODULE(MyDatePicker)
 
-- (UIView *)view
-{
+- (UIView *)view{
   return [[MyDatePicker alloc] init];
 }
 
