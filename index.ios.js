@@ -4,49 +4,38 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
 } from 'react-native';
+import DatePickerIOS from './MyDatePicker';
 
-var DatePickerIOS = require('./MyDatePicker');
+export default class DatePickerExample extends React.Component {
 
-var DatePickerExample = React.createClass({
-  getDefaultProps: function () {
-    return {
-      date: new Date(),
-    };
-  },
+  state = {date: new Date()};
 
-  getInitialState: function () {
-    return {
-      date: this.props.date,
-    };
-  },
-
-  onDateChange: function (date) {
-    console.log(date);
+  onDateChange(date) {
     this.setState({date: date});
-  },
+  }
 
-  render: function () {
+  render() {
     return (
-    <View>
-      <DatePickerIOS
-        style={{height: 200}}
-        date={this.state.date}
-        mode="datetime"
-        onDateChange={this.onDateChange}
-      />
-      <Text>
-        {this.state.date.toString()}
-      </Text>
-    </View>
+      <View>
+        <DatePickerIOS
+          style={{height: 200}}
+          date={this.state.date}
+          mode="datetime"
+          onDateChange={(date) => this.onDateChange(date)}
+        />
+        <Text>
+          {this.state.date.toString()}
+        </Text>
+      </View>
     );
-  },
-});
+  }
+}
 
 AppRegistry.registerComponent('RNBindingSample', () => DatePickerExample);
