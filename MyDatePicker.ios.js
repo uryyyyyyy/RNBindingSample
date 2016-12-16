@@ -1,5 +1,4 @@
-'use strict';
-
+//@flow
 import React, { Component } from 'react';
 import requireNativeComponent from 'requireNativeComponent';
 const RCTDatePickerIOS = requireNativeComponent('MyDatePicker');
@@ -7,7 +6,7 @@ const RCTDatePickerIOS = requireNativeComponent('MyDatePicker');
 export default class DatePickerIOS extends React.Component {
 
   _onChange(event) {
-    this.props.onDateChange(new Date(event.nativeEvent.myChangeDateEvent));
+    this.props.onDateChange(new Date(event.nativeEvent.changedDate));
   }
 
   render() {

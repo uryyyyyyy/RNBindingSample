@@ -12,7 +12,7 @@
 
 - (void)didChange:(MyDatePicker*)sender {
   if (sender.onMyChange) {
-    sender.onMyChange(@{ @"myChangeDateEvent": @(self.date.timeIntervalSince1970 * 1000.0) });
+    sender.onMyChange(@{ @"changedDate": @(self.date.timeIntervalSince1970 * 1000.0) });
   }
 }
 
