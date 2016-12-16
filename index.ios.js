@@ -34,12 +34,17 @@ var DatePickerExample = React.createClass({
 
   render: function () {
     return (
+    <View>
       <DatePickerIOS
         style={{height: 200}}
         date={this.state.date}
         mode="datetime"
         onDateChange={this.onDateChange}
       />
+      <Text>
+        {this.state.date.toString()}
+      </Text>
+    </View>
     );
   },
 });

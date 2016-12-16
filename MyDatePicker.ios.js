@@ -10,7 +10,7 @@ const requireNativeComponent = require('requireNativeComponent');
 class DatePickerIOS extends React.Component {
 
   _onChange(event) {
-    this.props.onDateChange(new Date(event.nativeEvent.timestamp));
+    this.props.onDateChange(new Date(event.nativeEvent.myChangeDateEvent));
   }
 
   render() {
