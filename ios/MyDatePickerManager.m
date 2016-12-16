@@ -11,20 +11,22 @@ RCT_EXPORT_MODULE(MyDatePicker)
   return [[MyDatePicker alloc] init];
 }
 
+- (UIDatePickerMode) myAction:(NSString *)modeStr {
+  if([modeStr isEqualToString:@"time"]){
+    return UIDatePickerModeTime;
+  }else if([modeStr isEqualToString:@"date"]){
+    return UIDatePickerModeDate;
+  }else { //datetime
+    return UIDatePickerModeDateAndTime;
+  }
+}
+
+
 RCT_EXPORT_VIEW_PROPERTY(date, NSDate)
 RCT_EXPORT_VIEW_PROPERTY(onMyChange, RCTBubblingEventBlock)
 RCT_CUSTOM_VIEW_PROPERTY(mode, UIDatePickerMode, UIDatePicker){
   NSString *modeStr = json;
-  NSLog(@"modeStr: %@", modeStr);
-  
-  UIDatePickerMode pickerMode;
-  if([modeStr isEqualToString:@"time"]){
-    pickerMode = UIDatePickerModeTime;
-  }else if([modeStr isEqualToString:@"date"]){
-    pickerMode = UIDatePickerModeDate;
-  }else { //datetime
-    pickerMode = UIDatePickerModeDateAndTime;
-  }
+  UIDatePickerMode pickerMode = [self myAction:modeStr];
   view.datePickerMode = pickerMode;
 }
 
