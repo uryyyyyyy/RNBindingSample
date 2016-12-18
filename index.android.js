@@ -17,12 +17,15 @@ import MyTextView from './MyTextView'
 import MyEditText from './MyEditText'
 
 export default class RNBindingSample extends Component {
+
+  state = {text: ""};
+
   render() {
     return (
       <View>
         <MySlider value={50} />
-        <MyTextView value="hello world" style={{height: 50, width: 800}} />
-        <MyEditText value="haha" style={{height: 100, width: 800}} />
+        <MyTextView value={this.state.text} style={{height: 50, width: 800}} />
+        <MyEditText value={this.state.text} style={{height: 100, width: 800}} myChange={(event) => this.setState({text: event.nativeEvent.value})} />
       </View>
     );
   }
