@@ -12,13 +12,13 @@ import {
   View
 } from 'react-native';
 
-import URYSlider from './URYSlider'
+import MySlider from './MySlider'
 
 export default class RNBindingSample extends Component {
   render() {
     return (
       <View>
-        <URYSlider />
+        <MySlider />
       </View>
     );
   }

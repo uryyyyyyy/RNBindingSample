@@ -1,3 +1,3 @@
 import { requireNativeComponent } from 'react-native';
 
-export default requireNativeComponent('URYSlider');
+export default requireNativeComponent('MySlider');

@@ -22,7 +22,7 @@ public class URYReactSliderManager extends SimpleViewManager<SeekBar> {
 
     private static final int STYLE = android.R.attr.seekBarStyle;
 
-    private static final String REACT_CLASS = "URYSlider";
+    private static final String REACT_CLASS = "MySlider";
 
     static class ReactSliderShadowNode extends LayoutShadowNode implements
             CSSNodeAPI.MeasureFunction {
