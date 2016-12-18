@@ -1,7 +1,7 @@
 //@flow
 import React, { Component } from 'react';
 import requireNativeComponent from 'requireNativeComponent';
-const RCTDatePickerIOS = requireNativeComponent('MyDatePicker');
+const RCTDatePickerIOS = requireNativeComponent('MyDatePickerManagerSwift');
 
 export default class DatePickerIOS extends React.Component {
 

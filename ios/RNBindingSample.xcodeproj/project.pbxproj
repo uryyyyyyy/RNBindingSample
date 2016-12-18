@@ -24,9 +24,11 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		E78A0F2F1E06778A00C4032C /* MyDatePickerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A0F2E1E06778A00C4032C /* MyDatePickerSwift.swift */; };
+		E78A0F311E067A4A00C4032C /* MyDatePickerManagerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A0F301E067A4A00C4032C /* MyDatePickerManagerSwift.swift */; };
+		E78A0F331E067B2100C4032C /* MyDatePickerSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = E78A0F321E067B2100C4032C /* MyDatePickerSwift.m */; };
 		E7AD92F61E0397F600139ABA /* MyDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AD92F51E0397F600139ABA /* MyDatePicker.m */; };
 		E7AD92F91E03982300139ABA /* MyDatePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AD92F81E03982300139ABA /* MyDatePickerManager.m */; };
-		E7AD92FD1E03CAF500139ABA /* MyDatePickerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD92FC1E03CAF500139ABA /* MyDatePickerSwift.swift */; };
 		E7AD92FF1E03CB6400139ABA /* MyDatePickerManagerSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AD92FE1E03CB6400139ABA /* MyDatePickerManagerSwift.m */; };
 /* End PBXBuildFile section */
 
@@ -196,12 +198,14 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		E78A0F2E1E06778A00C4032C /* MyDatePickerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDatePickerSwift.swift; sourceTree = "<group>"; };
+		E78A0F301E067A4A00C4032C /* MyDatePickerManagerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDatePickerManagerSwift.swift; sourceTree = "<group>"; };
+		E78A0F321E067B2100C4032C /* MyDatePickerSwift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDatePickerSwift.m; sourceTree = "<group>"; };
 		E7AD92F41E0397DE00139ABA /* MyDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDatePicker.h; sourceTree = "<group>"; };
 		E7AD92F51E0397F600139ABA /* MyDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDatePicker.m; sourceTree = "<group>"; };
 		E7AD92F71E03980E00139ABA /* MyDatePickerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDatePickerManager.h; sourceTree = "<group>"; };
 		E7AD92F81E03982300139ABA /* MyDatePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDatePickerManager.m; sourceTree = "<group>"; };
 		E7AD92FB1E03CAF400139ABA /* RNBindingSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNBindingSample-Bridging-Header.h"; sourceTree = "<group>"; };
-		E7AD92FC1E03CAF500139ABA /* MyDatePickerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDatePickerSwift.swift; sourceTree = "<group>"; };
 		E7AD92FE1E03CB6400139ABA /* MyDatePickerManagerSwift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDatePickerManagerSwift.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -411,6 +415,9 @@
 				E7AD92F51E0397F600139ABA /* MyDatePicker.m */,
 				E7AD92F71E03980E00139ABA /* MyDatePickerManager.h */,
 				E7AD92F81E03982300139ABA /* MyDatePickerManager.m */,
+				E78A0F2E1E06778A00C4032C /* MyDatePickerSwift.swift */,
+				E78A0F301E067A4A00C4032C /* MyDatePickerManagerSwift.swift */,
+				E78A0F321E067B2100C4032C /* MyDatePickerSwift.m */,
 			);
 			name = "date-picker";
 			sourceTree = "<group>";
@@ -418,7 +425,6 @@
 		E7AD92FA1E03CA4B00139ABA /* date-picker-swift */ = {
 			isa = PBXGroup;
 			children = (
-				E7AD92FC1E03CAF500139ABA /* MyDatePickerSwift.swift */,
 				E7AD92FE1E03CB6400139ABA /* MyDatePickerManagerSwift.m */,
 			);
 			name = "date-picker-swift";
@@ -731,12 +737,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7AD92FD1E03CAF500139ABA /* MyDatePickerSwift.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				E7AD92F91E03982300139ABA /* MyDatePickerManager.m in Sources */,
 				E7AD92FF1E03CB6400139ABA /* MyDatePickerManagerSwift.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				E7AD92F61E0397F600139ABA /* MyDatePicker.m in Sources */,
+				E78A0F331E067B2100C4032C /* MyDatePickerSwift.m in Sources */,
+				E78A0F311E067A4A00C4032C /* MyDatePickerManagerSwift.swift in Sources */,
+				E78A0F2F1E06778A00C4032C /* MyDatePickerSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
