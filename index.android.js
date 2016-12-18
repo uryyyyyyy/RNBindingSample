@@ -23,9 +23,9 @@ export default class RNBindingSample extends Component {
   render() {
     return (
       <View>
-        <MySlider value={50} />
+        {/*<MySlider value={50} />*/}
         <MyTextView value={this.state.text} style={{height: 50, width: 800}} />
-        <MyEditText value={this.state.text} style={{height: 100, width: 800}} myChange={(event) => this.setState({text: event.nativeEvent.value})} />
+        <MyEditText value="" style={{height: 100, width: 800}} myChange={(event) => this.setState({text: event.nativeEvent.value})} />
       </View>
     );
   }
