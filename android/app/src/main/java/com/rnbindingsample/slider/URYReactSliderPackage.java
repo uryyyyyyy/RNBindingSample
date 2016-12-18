@@ -1,4 +1,4 @@
-package com.rnbindingsample.textfield;
+package com.rnbindingsample.slider;
 
 
 import com.facebook.react.ReactPackage;
@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class MyTextFieldPackage implements ReactPackage {
+public class URYReactSliderPackage implements ReactPackage {
 
     @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
@@ -22,7 +22,7 @@ public class MyTextFieldPackage implements ReactPackage {
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
-                new MyTextFieldManager()
+                new URYReactSliderManager()
         );
     }
 
