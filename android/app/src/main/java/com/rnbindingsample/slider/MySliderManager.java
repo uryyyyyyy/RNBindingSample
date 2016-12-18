@@ -18,7 +18,7 @@ import com.facebook.react.uimanager.annotations.ReactProp;
  *
  * Note that the slider is _not_ a controlled component.
  */
-public class URYReactSliderManager extends SimpleViewManager<SeekBar> {
+public class MySliderManager extends SimpleViewManager<SeekBar> {
 
     private static final int STYLE = android.R.attr.seekBarStyle;
 
@@ -77,8 +77,8 @@ public class URYReactSliderManager extends SimpleViewManager<SeekBar> {
         return new SeekBar(context, null, STYLE);
     }
 
-    @ReactProp(name = "value", defaultDouble = 0d)
-    public void setValue(SeekBar view, double value) {
-        Log.w("myTag", "" + value);
+    @ReactProp(name = "value", defaultInt = 0)
+    public void setValue(SeekBar view, int value) {
+        view.setProgress(value);
     }
 }

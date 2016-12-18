@@ -13,12 +13,16 @@ import {
 } from 'react-native';
 
 import MySlider from './MySlider'
+import MyTextView from './MyTextView'
+import MyEditText from './MyEditText'
 
 export default class RNBindingSample extends Component {
   render() {
     return (
       <View>
-        <MySlider />
+        <MySlider value={50} />
+        <MyTextView value="hello world" style={{height: 50, width: 800}} />
+        <MyEditText value="haha" style={{height: 100, width: 800}} />
       </View>
     );
   }

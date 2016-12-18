@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class URYReactSliderPackage implements ReactPackage {
+public class URYPackage implements ReactPackage {
 
     @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
@@ -22,7 +22,9 @@ public class URYReactSliderPackage implements ReactPackage {
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
-                new URYReactSliderManager()
+                new MySliderManager(),
+                new MyTextViewManager(),
+                new MyEditTextManager()
         );
     }
 
